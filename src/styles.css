@@ -1,0 +1,29 @@
+/* src/styles.css */
+body { margin: 0; background: #fafafa; color: #0f172a; }
+.card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+  margin-top: 16px;
+}
+button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  background: #111827;
+  color: white;
+  cursor: pointer;
+}
+button:disabled { opacity: 0.6; cursor: not-allowed; }
+select {
+  padding: 10px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+}
+.spinner {
+  width: 28px; height: 28px; border: 3px solid #e5e7eb; border-top-color: #4f46e5;
+  border-radius: 50%; margin: 0 auto; animation: spin 0.9s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
